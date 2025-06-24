@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Princyacademy.TestComponents.Listener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+    <classes>
+      <class name="Princyacademy.SubmitOrder">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="orderHistory"/>
+        </methods>
+      </class> <!-- Princyacademy.SubmitOrder -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-17T17:44:07Z" name="Suite" finished-at="2025-06-17T17:44:46Z" duration-ms="38542">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrder.submitOrder(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" name="submitOrder" class="Princyacademy.SubmitOrder"/>
+      </group> <!-- Purchase -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.loginErrorValidation(java.util.HashMap)[pri:0, instance:Princyacademy.ErrorValidations@6986bbaf]" name="loginErrorValidation" class="Princyacademy.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2025-06-17T17:44:07Z" name="Submit Order Test" finished-at="2025-06-17T17:44:46Z" duration-ms="38542">
+      <class name="Princyacademy.SubmitOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:07Z" name="launchApplication" finished-at="2025-06-17T17:44:38Z" duration-ms="30772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:38Z" name="submitOrder" data-provider="getData" finished-at="2025-06-17T17:44:40Z" duration-ms="1560" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=P12345678g@, product=ADIDAS ORIGINAL, email=princygoyal66@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-custom"> is not clickable at point (1198,133) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0cde2e0d-688d-4402-96b9-6398db95b87a, clickElement {id=19dba2a0-aff8-42aa-a8f1-e0bc8fe05241}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 97195, moz:profile: /var/folders/_0/zg5km5cn367..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (0cde2e0d-688d-4402-96b9-6398db95b87a)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 0cde2e0d-688d-4402-96b9-6398db95b87a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-custom"> is not clickable at point (1198,133) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0cde2e0d-688d-4402-96b9-6398db95b87a, clickElement {id=19dba2a0-aff8-42aa-a8f1-e0bc8fe05241}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 97195, moz:profile: /var/folders/_0/zg5km5cn367..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (0cde2e0d-688d-4402-96b9-6398db95b87a)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 0cde2e0d-688d-4402-96b9-6398db95b87a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at Princyacademy.AbstractComponents.AbstractComponents.goToCart(AbstractComponents.java:56)
+at Princyacademy.SubmitOrder.submitOrder(SubmitOrder.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:40Z" name="tearDown" finished-at="2025-06-17T17:44:40Z" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:40Z" name="launchApplication" finished-at="2025-06-17T17:44:44Z" duration-ms="3342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:44Z" name="submitOrder" data-provider="getData" finished-at="2025-06-17T17:44:45Z" duration-ms="1546" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=@P12345678g@, product=ADIDAS ORIGINAL, email=princygoyal661@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-custom"> is not clickable at point (1198,133) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [16ebc77a-8d13-49ad-a4ad-573eb68fc794, clickElement {id=f0417cd5-7c7c-458e-89c8-2d1c2d333730}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 97406, moz:profile: /var/folders/_0/zg5km5cn367..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (16ebc77a-8d13-49ad-a4ad-573eb68fc794)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 16ebc77a-8d13-49ad-a4ad-573eb68fc794]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-custom"> is not clickable at point (1198,133) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.5', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [16ebc77a-8d13-49ad-a4ad-573eb68fc794, clickElement {id=f0417cd5-7c7c-458e-89c8-2d1c2d333730}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.4, moz:accessibilityChecks: false, moz:buildID: 20250609112858, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 22.6.0, moz:processID: 97406, moz:profile: /var/folders/_0/zg5km5cn367..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Element: [[FirefoxDriver: firefox on mac (16ebc77a-8d13-49ad-a4ad-573eb68fc794)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 16ebc77a-8d13-49ad-a4ad-573eb68fc794
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at Princyacademy.AbstractComponents.AbstractComponents.goToCart(AbstractComponents.java:56)
+at Princyacademy.SubmitOrder.submitOrder(SubmitOrder.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:46Z" name="tearDown" finished-at="2025-06-17T17:44:46Z" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistory(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d]" started-at="2025-06-17T17:44:46Z" name="orderHistory" data-provider="getData" finished-at="2025-06-17T17:44:46Z" depends-on-methods="Princyacademy.SubmitOrder.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SubmitOrder.orderHistory(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SubmitOrder.orderHistory(java.util.HashMap)[pri:0, instance:Princyacademy.SubmitOrder@7241a47d] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+      </class> <!-- Princyacademy.SubmitOrder -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
