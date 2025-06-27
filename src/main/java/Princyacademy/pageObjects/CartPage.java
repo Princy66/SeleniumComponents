@@ -31,6 +31,7 @@ public class CartPage extends AbstractComponents {
 
 	public Boolean displayProducts(String productName) throws InterruptedException {
 		Thread.sleep(1000);
+		System.out.println("Test Line");
 
 		boolean match = cartProducts.stream()
 				.anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
